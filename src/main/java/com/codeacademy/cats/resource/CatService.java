@@ -39,7 +39,7 @@ public class CatService {
 	// will
 	// return a message with the Id generated for the file
 	@PostMapping(value = "/uploadCatPic")
-	public ResponseEntity<String> uploadCatImage(@RequestParam("file") MultipartFile file) {
+	public ResponseEntity<String> uploadCatPic(@RequestParam("file") MultipartFile file) {
 		try {
 			LOGGER.info("file: " + file.getOriginalFilename() + ",bytes: " + file.getBytes().toString());
 
@@ -57,7 +57,7 @@ public class CatService {
 	// the id given
 	// if the id is not present it will return a 404 error
 	@GetMapping(value = "/retrieveCatPicById/{id}", produces = MediaType.IMAGE_PNG_VALUE)
-	public ResponseEntity<byte[]> getCatImage(@PathVariable Long id) {
+	public ResponseEntity<byte[]> retrieveCatPicById(@PathVariable Long id) {
 
 		try {
 			LOGGER.info("Retreiving cat pic wit Id of" + id);
@@ -84,7 +84,7 @@ public class CatService {
 	// There are 2 optional parameters for limit and offset for paging through the
 	// list
 	@GetMapping(value = "/retrieveCatPicList")
-	public ResponseEntity<List<String>> getCatImage(@RequestParam Optional<Integer> limit,
+	public ResponseEntity<List<String>> retrieveCatPicList(@RequestParam Optional<Integer> limit,
 			@RequestParam Optional<Integer> offset) {
 
 		try {
@@ -150,7 +150,7 @@ public class CatService {
 	// if the id is not present it will return successfully with a message that
 //the image could not be deleted
 	@DeleteMapping(value = "/deleteCatPicById/{id}")
-	public ResponseEntity<String> deleteCatImage(@PathVariable Long id) {
+	public ResponseEntity<String> deleteCatPicById(@PathVariable Long id) {
 
 		try {
 			LOGGER.info("Deleting cat pic wit Id of" + id);
