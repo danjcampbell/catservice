@@ -1,0 +1,7 @@
+services:
+ cat-service:
+  image: dannycampbell726/cat-service:latest
+  ports:
+       - "8085:8085"
+version: '3.8'
+
