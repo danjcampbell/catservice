@@ -1,4 +1,4 @@
-package com.codeacademy.security;
+package com.danjcampbell.security;
 
 import java.util.ArrayList;
 import java.util.Collection;

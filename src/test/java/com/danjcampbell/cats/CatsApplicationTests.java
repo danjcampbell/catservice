@@ -1,4 +1,4 @@
-package com.codeacademy.cats;
+package com.danjcampbell.cats;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

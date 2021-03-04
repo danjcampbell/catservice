@@ -1,4 +1,4 @@
-package com.codeacademy.security;
+package com.danjcampbell.security;
 
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -6,7 +6,7 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Component;
 
-import com.codeacademy.security.CatServiceUser.Role;
+import com.danjcampbell.security.CatServiceUser.Role;
 
 @Component
 public class UserDetailsServiceImp implements UserDetailsService {

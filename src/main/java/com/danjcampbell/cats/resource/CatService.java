@@ -1,4 +1,4 @@
-package com.codeacademy.cats.resource;
+package com.danjcampbell.cats.resource;
 
 import java.io.File;
 import java.nio.file.Path;
@@ -26,7 +26,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
-import com.codeacademy.persistence.Storage;
+import com.danjcampbell.persistence.Storage;
 
 @RestController
 @RequestMapping("/catservice/api")
